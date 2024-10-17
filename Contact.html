@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSES</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!-- --------------Contact Us----------------- -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.8599218746344!2d86.99498717478987!3d23.68096689143943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71ee555555555%3A0xed1b371b2dd1ddfb!2sB.B.College!5e0!3m2!1sen!2sin!4v1729012292756!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>MXJX+92M, GT Rd, Ushagram, Asansol, West Bengal 713303</h5>
+                        <p>Asansol, West Bengal 713303</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>0341-2274842, 2275414 </h5>
+                        <p>Monday to Saturday, 10AM to 4PM </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>bbcollege1944@gmail.com </h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="formHandler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your Name" required>
+                    <input type="email" name="email" placeholder="Enter your Email" required>
+                    <input type="text" name="subject" placeholder="Enter your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn ">Send Message</button>
+                </form>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- --------------------Footer------------ -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus veritatis odio aut totam culpa error
+            saepe officiis sequi facilis quos. Porro eius praesentium, <br>odit harum suscipit maiores vitae id amet?
+            ipsum dolor sit amet consectetur adipisicing elit. Provident cumque illo qui dolorum quibusdam dicta
+            incidunt iste saepe rerum totam.</p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>
+            Made with <i class="fa fa-heart-o"></i> by Adarsh,Himanshu,Jashwindar,Shaika
+        </p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------------------------------- JavaScript------------------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";  // Make the menu visible by setting it to 0
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-200px";  // Hide the menu by moving it off the screen
+        };
+
+        // // Initial state: Make sure the menu is off-screen on page load
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     navlinks.style.right = "-200px";  // Hide menu on load
+        // });
+
+        // const navLinks = document.querySelector('.nav-links');
+        // const menuIcon = document.querySelector('.fa');
+
+        // menuIcon.addEventListener('click', () => {
+        //     navLinks.classList.toggle('active');
+        // });
+
+    </script>
+</body>
+
+</html>
